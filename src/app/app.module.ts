@@ -1,9 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// import { RouterModule } from '@angular/router';
 import { translationChunksConfig, translations } from '@spartacus/assets';
+// import { ConfigModule } from '@spartacus/core';
 import { B2cStorefrontModule } from '@spartacus/storefront';
 import { AppComponent } from './app.component';
-import { BootcampComponentModule } from './components/component.module';
+// import { BootcampStaticCmsModule } from './cms/static/static-cms.module';
+// import { BootcampComponentModule } from './components/component.module';
+// import { BootcampDataBindingModule } from './data-binding/data-binding.module';
+// import { BootcampI18nModule } from './i18n/i18n.module';
+// import { BootcampLayoutConfigModule } from './layout/layout.module';
+// import { BootcampConfigModule } from './myfeature/config/config.module';
+// import { Theme, ThemeConfig } from './myfeature/config/theme.config';
+// import { BootcampOutletModule } from './outlet/outlet.module';
+// import { BootcampRoutingModule } from './routing/routing.module';
+// import { BootcampSeoModule } from './seo/seo.module';
+// import { NgrxEffectsModule } from './state/ngrx-effects/ngrx-effects.module';
 
 @NgModule({
   declarations: [
@@ -30,20 +42,21 @@ import { BootcampComponentModule } from './components/component.module';
         level: '3.1'
       }
     }),
-    // BootcampConfigModule,
-    BootcampComponentModule,
 
-    // BootcampDataBindingModule
+    //Enable these modules to test
+    
+    // BootcampComponentModule,
+    // BootcampDataBindingModule,
     // BootcampRoutingModule,
-    //RouterModule
+    // RouterModule,
     // BootcampOutletModule,
-    // BootcampLayoutConfigModule
+    // BootcampLayoutConfigModule,
     // NgrxEffectsModule,
     // BootcampI18nModule,
     // BootcampSeoModule,
     // BootcampStaticCmsModule,
     // BootcampConfigModule,
-    // // Provide a custom theme to the `ThemeConfig`.
+    // Provide a custom theme to the `ThemeConfig`.
     // ConfigModule.withConfig({ theme: Theme.STRAWBERRIES } as ThemeConfig),
 
   ],
