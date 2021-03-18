@@ -14,10 +14,12 @@ export function i18nMessageFactory(
   messageService: GlobalMessageService,
   translation: TranslationService
 ) {
+  console.log("inside i18n");
   return (): Promise<any> => {
     translation
       .translate('customFeature.example', {
         param1: 1,
+        param2: 2,
       })
       // as long as https://github.com/SAP/cloud-commerce-spartacus-storefront/issues/3229 is not fixed
       .pipe(filter(l => !l.startsWith('[')))
@@ -38,7 +40,7 @@ export function i18nMessageFactory(
         },
 
         chunks: {
-          custom: ['customFeature'],
+          custom: ['customFeature', 'product'],
         },
       },
     }),
